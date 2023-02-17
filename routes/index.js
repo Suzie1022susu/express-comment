@@ -31,6 +31,10 @@ router.get('/register', function(req, res, next) {
   res.render('register', {});
 });
 
+router.get('/piechart',function(req, res, next){
+  res.render('piechart', {});
+})
+
 router.get('/send', function(req, res, next) {
   res.render('send', {
     data: {

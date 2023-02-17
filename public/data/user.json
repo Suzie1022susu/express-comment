@@ -1,1 +1,14 @@
-[{"username":"nic","psw":"1234"}]
+[
+    {
+        "username": "Suzie",
+        "psw": "1111"
+    },
+    {
+        "username": "Osborn",
+        "psw": "222"
+    },
+    {
+        "username": "King",
+        "psw": "333"
+    }
+]

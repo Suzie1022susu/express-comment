@@ -26,21 +26,12 @@ router.post('/write', function(req, res, next) {
     }
 
     var arr = JSON.parse(data.toString());  // 返回数据
-    arr.splice(0, 0, obj); // 插入文件
-    var newData = JSON.stringify(arr);
-
-    fs.writeFile(path+'data.json', newData, function(err){
-        if(err){
-            return res.send({
-                status:0,
-                info: '添加评论数据失败'
-            });
-        }
-        return res.send({
-            status:1,
-            info: obj
-        });
-    }); 
+    
+    console.log(arr);
+    return res.send({
+      status:1,
+      info:arr
+    })
   });
 });
 
@@ -60,13 +51,16 @@ router.get('/login', function(req, res, next) {
       if(arr[i].username == name) {
         if(arr[i].psw == psw) {
           res.cookie('username', name);
+          console.log(arr);
           return res.send({
-            status: 1
+            status: 11,
+            info:arr
+
           });
         } else {
           return res.send({
             status: 0,
-            info: '密码错误，请重试！'
+            info: '密码错误haha，请重试！'
           });
         } 
       }
