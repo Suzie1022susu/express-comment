@@ -3,7 +3,7 @@
 html, body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
-    color: rgb(58, 55, 55);
+    color: rgb(24, 4, 4);
     font-family: 'Montserrat';
 }
 body {
@@ -29,7 +29,7 @@ header {
     box-sizing: border-box;
 }
 header span a {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 nav span {
     display: inline-block;
