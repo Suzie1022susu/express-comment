@@ -53,9 +53,6 @@ router.get('/send', function(req, res, next) {
       name: req.cookies.username// send cookies include username
     }
   });
-});
-
-
-
+})
 
 module.exports = router;
