@@ -1,5 +1,5 @@
 $(function () {
-    $('.btn').click(() => {
+   
 
         var svg = d3.select('svg');
         var width = +svg.attr('width');
@@ -16,7 +16,7 @@ $(function () {
             .attr('rx', 40);
 
         var render = function (data) {
-            console.log(data);
+            console.log(data[1]);
             var margin = { top: 60, right: 40, bottom: 88, left: 105 };
             width - margin.left - margin.right;
             height - margin.top - margin.bottom;
@@ -422,6 +422,7 @@ $(function () {
             dataType: 'json',  
             success: function (data) {
                 if (data.status == 1) {
+                    console.log(data.info);
                     render(data.info);
                     //window.location.reload();  //refresd
                 } else if (data.status == 2) {
@@ -438,5 +439,5 @@ $(function () {
             }
         });
         return false;
-    });
+    
 });

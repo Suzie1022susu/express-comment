@@ -1,0 +1,70 @@
+@import url('./home.css');
+
+
+text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+  }
+
+
+.text:focus,
+.btn:focus {
+    outline: none;
+}
+
+.title {
+    font-size: 2em;
+    fill: #5b5f5f;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text_anote {
+    font-size: 10px;
+    fill: #010506;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.summaryTextTitle {
+    font-size: 1.5em;
+    fill: #393b3b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.summaryText {
+    font-size: 1.2em;
+    fill: #393b3b;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.uptext {
+    font-size: 1.2em;
+    fill: #393b3b;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.textAnno{
+
+    font-size: 15px;
+    fill: #010506;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+
+.text_anote{
+    font-size: 10px;
+    fill: #010506;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .tick text {
+    /*visibility: hidden;*/
+    font-size: 1.2em;
+    fill: #151515;
+    font-family: 'Montserrat', sans-serif;
+  }

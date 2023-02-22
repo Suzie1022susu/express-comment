@@ -31,16 +31,31 @@ router.get('/register', function(req, res, next) {
   res.render('register', {});
 });
 
-router.get('/piechart',function(req, res, next){
-  res.render('piechart', {});
-})
-
-router.get('/send', function(req, res, next) {
-  res.render('send', {
+router.get('/graph_a', function(req, res, next) {
+  res.render('graph_a', {
     data: {
       name: req.cookies.username
     }
   });
 });
+
+router.get('/graph_b', function(req, res, next) {
+  res.render('graph_b', {
+    data: {
+      name: req.cookies.username
+    }
+  });
+});
+
+router.get('/send', function(req, res, next) {
+  res.render('send', {
+    data: {
+      name: req.cookies.username// send cookies include username
+    }
+  });
+});
+
+
+
 
 module.exports = router;
