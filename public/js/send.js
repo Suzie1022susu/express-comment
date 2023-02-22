@@ -380,14 +380,6 @@ $(function () {
 
             var sum = d3.sum(data, function (d) { return d[test]; });
 
-            // svg.append("svg:image")
-            //     .attr("xlink:href", './public/images/pro.png')
-            //     .attr("class", 'back_svg')
-            //     .attr("width", 200)
-            //     .attr("height", 190)
-            //     .attr('y', -70)
-            //     .attr('x', -100);
-
             svg
                 .selectAll('allLabels')
                 .data(data_ready)
@@ -434,8 +426,6 @@ $(function () {
             },
             error: function () {
                 alert('failed');
-
-                
             }
         });
         return false;

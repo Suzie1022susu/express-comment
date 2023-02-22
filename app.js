@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var data = require('./routes/data');
-var image = require('./routes/image');
+
 
 var app = express();
 
@@ -25,7 +25,6 @@ app.use(express.static(path.join(__dirname, 'public'))); // static source
 
 app.use('/', index);
 app.use('/data', data);
-app.use('/image', image);
 
 // error
 // catch 404 and forward to error handler
